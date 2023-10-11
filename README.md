@@ -60,7 +60,6 @@
 
 <p>We encourage contributions from the Python community, especially from students and educators who want to enhance the learning experience. If you have Python projects, lessons, or improvements to existing content, feel free to submit pull requests. Contributions are highly appreciated!</p>
 
-<h2 id="license">License</h2>
 
 
 <p>Happy coding and learning! Ì∞çÌ∫Ä</p>
