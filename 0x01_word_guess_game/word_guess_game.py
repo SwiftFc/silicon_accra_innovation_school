@@ -11,6 +11,16 @@ def welcome():
     print("Hello Silicon Accra\n")
     print("Welcome to the Word Guessing Game!!!\n")
 
+    while True:
+        question = "What is the string method to add something to a list: "
+         
+
+        user = input(question) 
+        if user == ".append()":
+            print("Correct Answer is .append() ")
+            break
+        else:
+            print("Try again")
     
     while True:   
         user_name = input("Enter Your Name to get started: ")
@@ -50,7 +60,7 @@ def start_game():
             print("\n*****HINTS: NAMES OF STUDENT IN SAIS:🧩🧩*****")
             print(f"*****You have {total_lives} lives left to guess****")
         
-            user_guess = input("Guess a letter🤔🤔: ").lower()
+            user_guess = input("Guess a letter🤔🤔: ").lower().isalpha()
         
             if len(user_guess) == 1 and user_guess.isalpha(): #Here Both Conditions have to be true
                 if user_guess in guessed_letters:
@@ -72,8 +82,19 @@ def start_game():
                           \n****🏆🏆🏆🏆🏆🏆🏆🏆*****
                           \n*****Congratulations*****""")
                 break
+            
         if total_lives == 0:
-            print("\nSorry, you're out of attempts. The word was: " + guess_a_word)
+            question1 = "What special method allows you to initialize attributes in python: "
+            #answer = "def __init__"
+            y = input(question1)
+            if y == "def __init__":
+                return start_game()
+                #total_lives == 5
+            else:
+                print("\nGame has Ended")
+                print("\n\n*********EXIT💔💔💔**************")
+        else:
+            #print("\nSorry, you're out of attempts. The word was: " + guess_a_word)
             print("\n\n*********EXIT💔💔💔**************")
             
 
