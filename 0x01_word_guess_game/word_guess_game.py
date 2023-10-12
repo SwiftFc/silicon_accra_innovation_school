@@ -41,14 +41,14 @@ def display_word(word, guessed_letters):
 
 def start_game():
         guess_a_word = pick_random_word()
-        total_lives = 10
+        total_lives = 5
         guessed_letters = []
 
         while total_lives > 0:
             words_to_display = display_word(guess_a_word, guessed_letters)
             print("\nGuess the hidden word: " + words_to_display)
             print("\n*****HINTS: NAMES OF STUDENT IN SAIS:🧩🧩*****")
-            print(f"*****You have {total_lives} live left to guess****")
+            print(f"*****You have {total_lives} lives left to guess****")
         
             user_guess = input("Guess a letter🤔🤔: ").lower()
         
