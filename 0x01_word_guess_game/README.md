@@ -6,7 +6,7 @@
 
 <h1>Word Guess Game</h1>
 
-<p>Welcome to the Word Guess Game! This Python game challenges you to guess a hidden word by providing you with hints and the length of the word. Let's put your word knowledge to the test!</p>
+<p>Welcome to the Word Guess Game! This Python game challenges you to guess a hidden word by providing you with hints and the length of the word. For this task we used a predfined list of words, that is names of students in Silicon Accra Innovation School. Let's put your word knowledge to the test!</p>
 
 <h2>How to Play</h2>
 
@@ -29,7 +29,6 @@
 <li>Random selection of words from various categories.</li>
 <li>Display of word length with underscores to represent unknown letters.</li>
 <li>Interactive gameplay with feedback on correct and incorrect guesses.</li>
-<li>Scoring system or lives to add an element of challenge.</li>
 </ul>
 
 <h2>Getting Started</h2>
@@ -43,10 +42,12 @@
 <li>Follow the on-screen instructions to play the game.</li>
 </ol>
 
-<h2>Contributing</h2>
-
-<p>If you'd like to contribute to this project, report issues, or add new word categories, please follow our [Contribution Guidelines](CONTRIBUTING.md).</p>
-
+<h2>System Requirement</h2>
+<ul>
+<li>Operating System - Platform Independent.</li>
+<li>Programming Language - Python</li>
+<li>User Interface: Termianal</li>
+</ul>
 
 <p>Enjoy the game and have fun guessing words!</p>
 
