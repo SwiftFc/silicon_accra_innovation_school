@@ -104,7 +104,7 @@ def start_game():
             x = input(question2).strip()
 
             if x.lower() == "def __init__":
-                print("\nCorrect answer✔✔✔! You may procede to play the game🎮🚀🚀🎮 again")
+                print("\nCorrect answer✔✔✔! You may proceed to play the game🎮🚀🚀🎮 again")
                 start_game()
             else:
                 print("\n   Wrong Answer, Game has Ended")
