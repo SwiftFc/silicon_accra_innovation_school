@@ -48,7 +48,7 @@
 <p>If you'd like to contribute to this project, report issues, or add new word categories, please follow our [Contribution Guidelines](CONTRIBUTING.md).</p>
 
 
-<p>Enjoy the game and have fun guessing words!</p>
+<p>Enjoy the game and have fun guessing the words!</p>
 
 </body>
 </html>
