@@ -60,7 +60,7 @@ def start_game():
             print("\n*****HINTS: NAMES OF STUDENT IN SAIS:🧩🧩*****")
             print(f"*****You have {total_lives} lives left to guess****")
         
-            user_guess = input("Guess a letter🤔🤔: ").lower().isalpha()
+            user_guess = input("Guess a letter🤔🤔: ").lower() 
         
             if len(user_guess) == 1 and user_guess.isalpha(): #Here Both Conditions have to be true
                 if user_guess in guessed_letters:
