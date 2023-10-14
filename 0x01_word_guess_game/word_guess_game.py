@@ -1,4 +1,5 @@
 import random
+from word import name_list
 
 """
 *Main -  Implementation of a Word Guessing Game in python
@@ -7,45 +8,60 @@ import random
          from a predefined list, and a player 
          is tasked to guess the letters in the word."""
 
+question_list = [
+    {"question": "Which of data type in python does not have the changeability characteristics:", "answer": "tuple"},
+    {"question": "How do you open a file in Python:", "answer": "open()"},
+    {"question": "Which data type in Python is unordered:", "answer": "dictionary"},
+    {"question": "Which keyword function returns the number of items in an object, such as a string or list:", "answer": "len()"},
+    {"question": "What keyword method in python is used to get the absolute value of a number:", "answer": "abs()"}]
+
+def select_random_question():
+    return random.choice(question_list)
+
+def ask_random_question():
+    random_question = select_random_question()
+    question_text = random_question["question"]
+    correct_answer = random_question["answer"]
+
+    while True:
+        user_answer = input(f"{question_text} ").strip()
+    
+        if user_answer.lower() == correct_answer.lower():
+            print(f"You are correct. **Answer = {correct_answer}\n")
+            break        
+        else:
+            print("******Wrong Answer❌❌❌\n*****Keep Trying****\n")
+            
+
+        
+        
 def welcome():
     print("Hello Silicon Accra\n")
     print("Welcome to the Word Guessing Game🚀🚀🚀!!!\n")
 
-    print("*****************✔✔✔✔✔✔✔✔✔✔✔✔********************\n")
-    print("Answer the Python Question Below to get Access to the Program\n")
+    print("**********************************************\n")
+    print("Answer the Simple Python Question Below to get Access to the Program\n")
+
+    ask_random_question()
+
     
-    while True:   
-        question = "What is the string method in python to add something to a list: "
-        user = input(question)
-        if user == ".append()":
-            print("\nYou are absolutely correct✔✔✔✔✔. *Answer = .append() ")
-            break
-        else:
-            print("\n******Keep Trying💪💪💪******\n*****Yes You Can👏👏👏*****\n*****You've Got This💪💪💪****")
+            
 
     while True:
-        user_name = input("\n\nEnter Your Name to get started: ")
-
+        user_name = input("***************************************\nEnter Your Name to get started: ")
         if user_name.replace(" ", "").isalpha() != True:
             print("\nInvalid❌❌❌❌  Expecting Alphabets only")
         else:
-            print("\n****Login Successful💻💻💻****")
-            print("**** Have fun🎉🎉🎉🎉 playing and see if you can guess the hidden words!🎮🎮🎮****")
+            desn = 'Login Successful💻💻💻'.center(50, '*')
+            print(f"\n{desn}")
+            print("**** Have fun🎉🎉 playing and see if you can guess the hidden words!🎮🎮🎮****\n")
             break
-
-    while True:
-        print("\nAnswer this final question to Start the game\n")
-        question1 = "\nHow do you append multiple values to a list python: "
-
-        user1 = input(question1)
-        if user1 == ".extend()":
-            print("***You answered correctly✔✔✔✔✔👏*** Answer = .extend() ")
-            break
-        else:
-            print("Keep Trying😢😢")
+            
+    print("\nAnswer three final questions to Start the game\n")
+    ask_random_question()
+    ask_random_question()
+    ask_random_question()
     
-name_list = ["stanley", "praise", "abena", "kate", "nehemiah", "kristal", 
-             "elijah", "ergesis", "kelvin", "stephen", "caleb", "skekwonya"]
 
 
 
@@ -70,10 +86,12 @@ def start_game():
 
         while total_lives > 0:
             words_to_display = display_word(guess_a_word, guessed_letters)
-            print("\nGuess the hidden🗝🗝 word: " + words_to_display)
-            print("\n*****HINTS: NAMES OF STUDENT IN SAIS:🧩🧩*****\n")
-            print(f"*****You have {total_lives} lives left to guess****")
-            print("**************🧩🧩🧩🧩🧩🧩*****************")
+            design = 'WELCOME TO THE MAIN PAGE OF THE WORD GUESSING GAME'.center(100, '*')
+            print(design)
+            print("\nGUESS THE HIDDEN WORD:  " + words_to_display)
+            print("\n****  HINT: NAMES OF STUDENT IN SAIS 🧩🧩  *\n")
+            print(f"*****  You have {total_lives} lives left to guess  *****")
+            print("**************🧩🧩🧩🧩🧩🧩******************\n")
             user_guess = input("Guess a letter🤔🤔: ").lower()
         
             if len(user_guess) == 1 and user_guess.isalpha(): #Here Both Conditions have to be true
@@ -105,6 +123,7 @@ def start_game():
 
             if x.lower() == "def __init__":
                 print("\nCorrect answer✔✔✔! You may proceed to play the game🎮🚀🚀🎮 again")
+                ask_random_question()
                 start_game()
             else:
                 print("\n   Wrong Answer, Game has Ended")
