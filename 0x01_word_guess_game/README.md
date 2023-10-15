@@ -45,7 +45,14 @@
 
 <h2>Contributing</h2>
 
-<p>If you'd like to contribute to this project, report issues, or add new word categories, please follow our [Contribution Guidelines](CONTRIBUTING.md).</p>
+<p>If you'd like to contribute to this project, report issues, or add new word categories, please send us an email as provided in our email address in the AUTHORS FILE.</p>
+
+<h2>System Requirement</h2>
+<ul>
+<li>Operating System - Platform Independent.</li>
+<li>Programming Language - Python.</li>
+<li>User Interface - Terminal</li>
+</ul>
 
 
 <p>Enjoy the game and have fun guessing words!</p>

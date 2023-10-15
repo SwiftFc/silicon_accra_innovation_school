@@ -1,5 +1,5 @@
 import random
-from word import name_list
+from word import name_list, question_list
 
 """
 *Main -  Implementation of a Word Guessing Game in python
@@ -8,12 +8,7 @@ from word import name_list
          from a predefined list, and a player 
          is tasked to guess the letters in the word."""
 
-question_list = [
-    {"question": "Which of data type in python does not have the changeability characteristics:", "answer": "tuple"},
-    {"question": "How do you open a file in Python:", "answer": "open()"},
-    {"question": "Which data type in Python is unordered:", "answer": "dictionary"},
-    {"question": "Which keyword function returns the number of items in an object, such as a string or list:", "answer": "len()"},
-    {"question": "What keyword method in python is used to get the absolute value of a number:", "answer": "abs()"}]
+
 
 def select_random_question():
     return random.choice(question_list)
