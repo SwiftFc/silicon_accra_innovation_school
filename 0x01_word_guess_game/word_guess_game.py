@@ -117,7 +117,8 @@ def start_game():
             x = input(question2).strip()
 
             if x.lower() == "def __init__":
-                print("\nCorrect answer✔✔✔! You may proceed to play the game🎮🚀🚀🎮 again")
+                print("\nCorrect answer✔✔✔! You may proceed to play the game🎮🚀🚀🎮 again\n")
+                ask_random_question()
                 ask_random_question()
                 start_game()
             else:
